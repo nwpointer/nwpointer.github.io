@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>nathan pointer - portfolio </title>
+	<link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="style.css">
+	<style>
+		#portfolio{
+			padding:0px;
+			list-style: none;
+		}
+		#portfolio li{
+			width: 100%;
+			display: inline-block;
+			overflow: hidden;
+		}
+		@media(min-width: 600px){
+			#portfolio li{
+				width: 45%;
+			}
+			#portfolio li:nth-child(odd){
+				margin-right: 3%;
+			}
+		}
+		p{
+			font-family: 'helvetica';
+			letter-spacing: .025rem;
+			font-weight: 400;
+			color: #585858;
+			line-height: 1.5rem;
+			font-size: 90%;
+		}
+
+	</style>
+</head>
+<body>
+	<h2>portfolio</h2>
+	<nav>
+		<ul>
+			<li><a href="index.html">home</a></li>
+			<li><a href="contact.html">contact</a></li>
+			<li><a href="#"><s>blog</s></a></li>
+		</ul>
+	</nav>
+
+	<ul id="portfolio">
+		<li>
+			<img src="img/green_1x.jpg" width="100%" alt="">
+			<h3>geo map</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti officiis consequatur ea repellat, eius voluptate esse aliquid deserunt provident quas nostrum magnam sit unde libero eos, ab in odit quisquam!</p><hr><br>
+		</li>
+		<li>
+			<img src="img/signup_1x.png" width="100%" alt="">
+			<h3>fansource</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti officiis consequatur ea repellat, eius voluptate esse aliquid deserunt provident quas nostrum magnam sit unde libero eos, ab in odit quisquam!</p><hr><br>
+		</li>
+		<li>
+			<img src="img/website_copy_1x.gif" width="100%" alt="">
+			<h3>geo programs</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti officiis consequatur ea repellat, eius voluptate esse aliquid deserunt provident quas nostrum magnam sit unde libero eos, ab in odit quisquam!</p><hr><br>
+		</li>
+	</ul>
+
+	
+</body>
+</html>

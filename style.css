@@ -1,0 +1,30 @@
+.purple{
+	color:purple;
+}
+.orange{
+	color:orange;
+}
+#comment{
+	color: grey;
+}
+
+*{
+	/*font-family: courier;*/
+	font-family: 'helvetica';
+	font-family: 'Inconsolata' ;
+	font-weight: 100;
+	/*letter-spacing: .025rem;*/
+}
+body{
+	/*margin-top:15%;*/
+	padding: 15%;
+}
+nav ul{
+	list-style: none;
+	padding-top:  .5rem;
+	display: inline;
+}
+nav ul li{
+	/*display: inline;*/
+	padding: .5rem;
+}
