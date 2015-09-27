@@ -8,6 +8,39 @@
 	color: grey;
 }
 
+#home #logo{
+	margin-bottom: 10%;
+}
+#logo{
+	margin-top:5%;
+	margin-bottom:5%;
+}
+.tag{
+	display: inline-block;
+	background-color: blue;
+	/*background: black;*/
+	padding: .15rem .5rem;
+	border-radius: 2rem;
+	color: white;
+	/* font-weight: 100; */
+	font-size: 90%;
+}
+
+.blink {
+      animation: blink 1.5s steps(4, start) infinite;
+      -webkit-animation: blink 1.5s steps(4, start) infinite;
+    }
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
 *{
 	/*font-family: courier;*/
 	font-family: 'helvetica';
@@ -16,15 +49,42 @@
 	/*letter-spacing: .025rem;*/
 }
 body{
-	/*margin-top:15%;*/
-	padding: 15%;
+	padding:0 15%;
+}
+ul{
+	padding-left: 0rem;
 }
 nav ul{
 	list-style: none;
 	padding-top:  .5rem;
 	display: inline;
+
 }
 nav ul li{
-	/*display: inline;*/
-	padding: .5rem;
+	display: inline;
+	padding: .5rem .5rem .5rem 0rem;
+}
+
+#home nav ul li{
+	display: block;
+}
+
+#page-header{
+	color:orange;
+}
+
+footer{
+	position: fixed;
+	background: rgba(255,255,255,.9);
+	width: 100%;
+	bottom: 0rem;
+	color:grey;
+	font-size: 80%;
+	padding: 1rem 0rem 2rem;
+}
+
+@media(max-width: 625px){
+	body{
+		font-size: 90%;
+	}
 }

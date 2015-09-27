@@ -9,17 +9,28 @@
 		#portfolio{
 			padding:0px;
 			list-style: none;
+			padding-bottom: 3rem;
 		}
 		#portfolio li{
 			width: 100%;
 			display: inline-block;
 			overflow: hidden;
+			margin-bottom: 3rem;
 		}
-		@media(min-width: 600px){
-			#portfolio li{
-				width: 45%;
+
+		@media(max-width: 1025px){
+			#portfolio img{
+				width: 100%;
 			}
-			#portfolio li:nth-child(odd){
+		}
+
+		@media(min-width: 1025px){
+			#portfolio img, #portfolio aside{
+				max-width: 45%;
+				display: inline-block;
+				vertical-align:top;
+			}
+			#portfolio img:nth-child(odd){
 				margin-right: 3%;
 			}
 		}
@@ -35,32 +46,66 @@
 	</style>
 </head>
 <body>
-	<h2>portfolio</h2>
+	<img src="img/logo.png" id="logo" height="67" width="58" alt="">
+	<h2 id="page-header">portfolio</h2>
 	<nav>
 		<ul>
 			<li><a href="index.html">home</a></li>
 			<li><a href="contact.html">contact</a></li>
+			<li><a href="NathanPointer.pdf">resume</a></li>
 			<li><a href="#"><s>blog</s></a></li>
 		</ul>
 	</nav>
+	<br><br><br>
 
 	<ul id="portfolio">
 		<li>
-			<img src="img/green_1x.jpg" width="100%" alt="">
-			<h3>geo map</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti officiis consequatur ea repellat, eius voluptate esse aliquid deserunt provident quas nostrum magnam sit unde libero eos, ab in odit quisquam!</p><hr><br>
+			<img src="img/green_1x.jpg"  alt="">
+			<aside>
+				<h3><b>01.</b>UO Global research</h3>
+				<p>My work on an interactive map that highlighted the international effect of UO researchers won 2nd place in the 2015 CASE District VIII Communication Awards competition.
+				</p>
+				<p>
+					<a href="http://globalresearch.uoregon.edu/">http://globalresearch.uoregon.edu/</a>
+				</p>
+				<div class="tag">js</div>
+				<div class="tag">design</div>
+				<div class="tag">frontend</div>
+			</aside>
 		</li>
 		<li>
-			<img src="img/signup_1x.png" width="100%" alt="">
-			<h3>fansource</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti officiis consequatur ea repellat, eius voluptate esse aliquid deserunt provident quas nostrum magnam sit unde libero eos, ab in odit quisquam!</p><hr><br>
+			<img src="img/signup_1x.png"  alt="">
+			<aside>
+				<h3><b>02.</b>FanSource</h3>
+				<p>My friends and I thought it would be interesting to crowdfund concerts so I built a working prototype and reached the final round in a University sponsored shark tank (a business presentation event like the ABC show of the same name)
+				</p>
+				<div class="tag">php</div>
+				<div class="tag">design</div>
+				<div class="tag">prototype</div>
+			</aside>
 		</li>
 		<li>
-			<img src="img/website_copy_1x.gif" width="100%" alt="">
-			<h3>geo programs</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti officiis consequatur ea repellat, eius voluptate esse aliquid deserunt provident quas nostrum magnam sit unde libero eos, ab in odit quisquam!</p><hr><br>
+			<img src="img/website_copy_1x.gif"  alt="">
+			<aside>
+				<h3><b>03.</b>Geo international study abroad</h3>
+				<p>I built a catalog and search utility on top of the cms drupal for all the study abroad programs available at the Univerisity of Oregon. Site is currently use by both staff and students</p>
+				<p>
+					<a href="http://geo.uoregon.edu/">http://geo.uoregon.edu/</a>
+				</p>
+
+				<div class="tag">js</div>
+				<div class="tag">design</div>
+				<div class="tag">fullstack</div>
+			</aside>
 		</li>
 	</ul>
+
+	<footer>
+		
+			design and dev by <a href="mailto:nwpointer@gmail.com">nwpointer@gmail.com</a>, 
+			twitter: <a href="https://twitter.com/nwpointer">@nwpointer</a>
+		
+	</footer>
 
 	
 </body>
